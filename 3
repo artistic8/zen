@@ -1,0 +1,8 @@
+raceDate="0308";
+venue="S2";
+php bets.php $raceDate $venue;
+for i in `seq 1 2184`; 
+do 
+    php bets.php $raceDate $venue $i;
+done
+php agregate.php $raceDate $venue;
